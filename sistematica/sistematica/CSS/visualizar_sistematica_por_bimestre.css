@@ -1,0 +1,172 @@
+/* CSS/visualizar_sistematica_por_bimestre.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Container principal - ajustado para considerar a sidebar */
+.sistematicas-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: 60px; /* Espaço para o header */
+    margin-left: 200px; /* Largura da sidebar */
+    box-sizing: border-box;
+}
+
+.sistematicas-section {
+    flex: 1;
+    min-width: 0;
+}
+
+.sistematicas-section h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Cards de sistemática mais compactos */
+.sistematica-item {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.sistematica-item h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0 0 0.5rem 0;
+}
+
+.sistematica-item p {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0.2rem 0;
+}
+
+/* Seções de avaliação mais compactas */
+.avaliacao-section {
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: 0.6rem;
+    margin: 0.4rem 0;
+}
+
+.avaliacao-section h4 {
+    font-size: 0.9rem;
+    color: #444;
+    margin: 0 0 0.3rem 0;
+}
+
+/* Botões mais compactos */
+.button-approve, .button-reprove {
+    padding: 0.35rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.button-approve {
+    background-color: #28a745;
+    margin-right: 0.4rem;
+}
+
+.button-reprove {
+    background-color: #dc3545;
+}
+
+.button-approve:hover, .button-reprove:hover {
+    opacity: 0.9;
+}
+
+/* Campo de mensagem mais compacto */
+.mensagem-reprovacao {
+    margin-top: 0.6rem;
+}
+
+.mensagem-reprovacao label {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+.mensagem-reprovacao textarea {
+    width: 100%;
+    padding: 0.4rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    resize: vertical;
+    min-height: 45px;
+}
+
+/* Status */
+.status-aprovado {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.status-reprovado {
+    color: #dc3545;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.status-pendente {
+    color: #ffc107;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Botão voltar */
+.button-container {
+    margin-left: 200px; /* Alinhado com o container principal */
+    padding: 0 1rem 1rem;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sistematicas-container {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 50px;
+        padding: 0.8rem;
+    }
+
+    .button-container {
+        margin-left: 0;
+        padding: 0.8rem;
+    }
+
+    .sistematicas-section {
+        width: 100%;
+    }
+}

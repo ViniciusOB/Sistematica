@@ -1,0 +1,41 @@
+/* CSS para a página visualizar_bimestres.php */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.bimestre-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bimestre-button {
+    background-color: #3b5998;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bimestre-button:hover {
+    background-color: #2e4372;
+}

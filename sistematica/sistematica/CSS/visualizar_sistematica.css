@@ -1,0 +1,87 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    padding: 20px;
+    margin-top: 60px; /* Ajuste de espaço para o header */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Filtros */
+.filter-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-buttons {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+/* Botão ativo para indicar o filtro selecionado */
+.filter-button.active {
+    background-color: #28a745; /* Verde para o botão ativo */
+    color: white;
+}
+
+/* Título das turmas */
+.turmas-title {
+    text-align: center;
+    color: #333;
+    font-size: 28px; /* Aumentei o tamanho da fonte */
+    margin-bottom: 40px; /* Mais espaço embaixo do título */
+    font-weight: bold;
+}
+
+/* Contêiner das turmas */
+.turmas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo dos cards das turmas */
+.turma-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 200px; /* Largura fixa para os cards */
+}
+
+.turma-card:hover {
+    background-color: #e9ecef;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mensagem quando não há turmas */
+.no-turmas {
+    text-align: center;
+    color: #555;
+}

@@ -1,0 +1,80 @@
+/* CSS/dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.chart-container {
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.mensagens-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mensagens-list li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.mensagens-list li:last-child {
+    border-bottom: none;
+}
+
+.mensagens-list strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.mensagens-list p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
